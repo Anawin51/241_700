@@ -93,7 +93,7 @@ app.delete('/users/:id', (req, res) => {
     //หา index ของ user ที่ต้องการจะลบ
     let selectedIndex = users.findIndex(user => user.id == id)
 
-    //ลบ
+    
     users.splice(selectedIndex, 1)
      res.json({
         message: 'Delete user successfully',
