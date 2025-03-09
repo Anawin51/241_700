@@ -41,6 +41,22 @@ input.form textarea {
     height: 40px;
 }
 
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.message.success {
+    background-color: skyblue;
+    display: block;
+}
+
+.message.danger {
+    background-color: blue;
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .flex {
         flex-direction: column;
