@@ -1,0 +1,170 @@
+/*ตรงนี้ CSS สำหรับตกแต่ง(id class)*/
+@font-face { 
+    font-family: 'Kanit';
+    src: url('./Kanit/Kanit-Regular.ttf');
+}
+body {
+    font-family: 'Kanit';
+    font-size: 14px;
+    background-color: #f7ffcb;
+    background-image: url('https://i.pinimg.com/736x/e7/54/39/e75439c9110c6994d359b0a5a306c5ba.jpg');
+}
+.container {
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-sizing: border-box ;
+    background-color: #d4d2d2;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+.header{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight:900;
+    background-color: #353535;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 2px;
+    border-radius: 10px;
+}
+th, td{
+    padding: 8px;
+    border-bottom: 1px solid #2A2F4F;
+    color: #000000;
+    text-align: center;
+    
+    
+}
+th{
+    color: #f3eae0;
+    background-color: #353535;
+}
+
+
+.delete, .edit{
+    border:  solid #353535;
+    background-color: #353535;
+    color: #ffffff;
+    font-weight:550;
+    font-size: 12px;
+    margin-right: 10px;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+
+.header-back{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight:900;
+    background-color: #353535;
+    padding: 10px ;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+.info{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 5px ;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+
+.header-form{
+    font-weight: bold;
+    font-size: 15px;
+    width: 140px;
+    color: #000000;
+    
+}
+.header-des{
+    font-weight: bold;
+    font-size: 15px;
+    width: 140px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    color: #000000;
+}
+.line{
+    color: #000000;
+}
+.form-input{
+    margin-bottom: 10px;
+}
+
+input.form, textarea{
+    border: 2px solid #000000;
+    width: 100%;
+}
+
+textarea:focus, input:focus{
+    background-color: #ffffff;
+}
+.center{
+    text-align: center;
+}
+
+.button{
+    transition-duration: 0.4s;
+    border: 2px solid #353535;
+    background-color: #353535;
+    width: 50%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgb(251, 255, 219);
+}
+.button:hover {
+    background-color: #917FB3; 
+    border: 2px solid #917FB3;
+    color: #ffffff;
+}
+
+.img{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+input:focus{
+    background-color: #ffffff;
+    
+}
+
+.message{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+.message.success{
+    background-color: rgb(51, 195, 94);
+    display: block;
+}
+.message.danger{
+    background-color: rgb(255, 67, 67);
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .flex{
+        flex-direction: column;
+    }
+    .header{
+        font-size: 24px;
+    }
+}
